@@ -1,4 +1,16 @@
- public int[] twoSum(int[] nums, int target) {
+/*Given a list of numbers and a number k, return whether any two numbers from the list add up to k.
+
+For example, given [10, 15, 3, 7] and k of 17, return true since 10 + 7 is 17.*/
+
+/*1. Two Sum-- leetcode*/
+
+/*Using datastructure HashMap to store each value in the array until the target sum is found*/
+//a+b=target
+//b=target-a
+//imagine b is unkown and a is each element in array till we find b in map
+
+
+public int[] twoSum(int[] nums, int target) {
         HashMap<Integer,Integer> m=new HashMap<>();
         int[] val=new int[2];
         for(int i=0;i<nums.length;i++)
